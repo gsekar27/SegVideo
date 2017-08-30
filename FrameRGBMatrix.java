@@ -1,11 +1,8 @@
 
 public class FrameRGBMatrix {
 	private int[][] rMatrix = new int[Constants.PADDED_HEIGHT][Constants.WIDTH];
-	
-
 	private int[][] gMatrix = new int[Constants.PADDED_HEIGHT][Constants.WIDTH];
-	private int[][] bMatrix = new int[Constants.PADDED_HEIGHT][Constants.WIDTH];
-	
+	private int[][] bMatrix = new int[Constants.PADDED_HEIGHT][Constants.WIDTH];	
 	public FrameRGBMatrix(int[][] rMat, int[][] gMat, int[][] bMat){
 		this.rMatrix = rMat;
 		this.gMatrix = gMat;
