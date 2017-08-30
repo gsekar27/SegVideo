@@ -2,7 +2,6 @@ import java.awt.GridBagConstraints;
 import java.awt.GridBagLayout;
 import java.awt.image.BufferedImage;
 import java.util.ArrayList;
-
 import javax.swing.ImageIcon;
 import javax.swing.JFrame;
 import javax.swing.JLabel;
@@ -49,9 +48,6 @@ public class Macroblock {
 			for(int i = 0; i < candidateMblocks.size(); i++ ){
 				int diff = this.SAD(candidateMblocks.get(i));
 				if(diff < sad){
-					
-					//System.out.println(this.getframeIndex() + " " + sad);
-				
 					ind = i;
 					sad = diff;
 				}
@@ -65,8 +61,7 @@ public class Macroblock {
 		}catch(ArrayIndexOutOfBoundsException e){
 			System.out.println("exception");
 			return null;
-		}
-		
+		}		
 	}
 	
 	public void display(){
