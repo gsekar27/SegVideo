@@ -1,14 +1,10 @@
 
 public class MotionVector {
-	
 	private int dx;
 	private int dy;
 	private int frameNo;
 	private int blockNo;
 	private boolean segment;
-	// if false  is background if true is foreground
-	
-	
 
 	public MotionVector(int x, int y, int fNo, int bNo, boolean segment)
 	{
